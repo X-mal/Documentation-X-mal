@@ -1,0 +1,36 @@
+[role = left]
+== Requisitos:
+
+[role = left]
+=== Requisitos Funcionais:
+
+* *[RF001] - Cadastro de Organizador:*
+O sistema deve permitir o armazenamento de dados dos organizadores para gerenciamento dos eventos e projetos.
+** *Ator:* Organizador
+** *Prioridade:* Backbone
+** *Entradas e pré-condições:* Para o organizador ser registrado o mesmo deve pertencer a uma instituição de ensino, 
+previamente cadastrada e entrar com dados tais como nome, email para caso seja necessário recuperar senha, senha para
+controle de acesso e instituição para determinar qual instituição o organizador está representando lembrando que o mesmo
+poderá agir em mais de uma instituição.
+** *Saídas e pós-condições:* No caso de o cadastro ser bem sucedido uma mensagem de sucesso deve ser retornada, em caso de negativa, uma mensagem de falha deve ser apresentado, e um registro da tentativa nos arquivos de log, junto ao motivo da falha.
+
+* *[RF002] - Entrada do organizador:*
+A entrada do organizador será por meio de uma interface web ligada por meio de intranet ao totens
+** *Ator:* Organizador
+** *Prioridade:* Backbone
+** *Entradas e pré-condições:* O organizador entrará no sistema usando seu email e senha, previamente cadastrados.
+** *Saídas e pós-condições:* Caso confirmado que a senha e usuario são validos um token  de acesso para o mesmo deve ser gerado, e o usuario será redirecionado para a página principal do sistema.
+
+* *[RF003] - Recuperação de senha para o organizador:*
+O sistema permitira a recuperação de conta com base em dados que o organizador forneceu durante o cadastro.
+** *Ator:* Organizador
+** *Prioridade:* Backbone
+** *Entradas e pré-condições:* Na recuperação de conta o ator deve fornecer seu cpf e a instituição que o mesmo representa.
+** *Saídas e pós-condições:* Caso a busca com os dados cedidos sejam válidos, um link para redefinição de senha deve ser enviado para o email cadastrado.
+
+* *[RF100] - Cadastro do Evento:*
+O evento deve ser cadastrado dentro do sistema para associação de projetos e visitantes.
+** *Ator:* Organizador
+** *Prioridade:* Backbone
+** *Entradas e pré-condições:* Para o cadastro do evento, deve ser fornecido um nome, descrição, data de início e data de término,local do evento.
+** *Saídas e pós-condições:* Caso o cadastro de evento seja bem-sucedido, um mensagem de sucesso deve ser apresentada e um registo do evento e do usuario que realizou o cadastro do mesmo deve ser armazenado, caso não um registro sobre a tentativa e o motivo da falha deve ser gravado nos artigos de log.
