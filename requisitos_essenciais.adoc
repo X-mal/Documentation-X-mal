@@ -28,7 +28,7 @@ Este documento especifica os requisitos funcionais essenciais (Mínimo Viável -
 | Alta/Essencial
 
 | R004
-| Conexão com banco de dados.
+| Conexão com banco de dados
 | O sistema deve estar sempre conectado ao banco de dados para o envio dos arquivos.
 | Alta/Essencial
 |===
