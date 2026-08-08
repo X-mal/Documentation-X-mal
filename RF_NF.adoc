@@ -1,0 +1,49 @@
+
+
+* **RF001 — Login de usuário**
+
+  * Aluno entra com RA e senha.
+* **RF002 — Envio de atestado**
+
+  * Aluno anexa e envia o atestado.
+* **RF003 — Envio de justificativa**
+
+  * Aluno pode escrever uma justificativa relacionada à ausência.
+* **RF004 — Consulta de solicitações**
+
+  * Aluno visualiza os atestados/justificativas enviados e seus respectivos status.
+* **RF005 — Análise do atestado**
+
+  * Responsável da escola visualiza os documentos enviados.
+* **RF006 — Aprovação ou rejeição**
+
+  * Responsável informa se o atestado foi aceito ou recusado.
+* **RF007 — Resposta ao aluno**
+
+  * O sistema disponibiliza para o aluno a decisão da escola.
+* **RF008 — Histórico**
+
+  * O sistema mantém o histórico dos envios e decisões.
+
+    
+Podemos organizar como o modelo:
+
+**Usabilidade**
+
+* **NF001 — Interface amigável**
+* **NF002 — Facilidade de envio de arquivos**
+
+**Segurança**
+
+* **NF003 — Autenticação**
+* **NF004 — Proteção dos documentos**
+
+**Confiabilidade**
+
+* **NF005 — Armazenamento dos arquivos**
+* **NF006 — Disponibilidade dos dados**
+
+**Desempenho**
+
+* **NF007 — Tempo de resposta**
+* **NF008 — Upload de arquivos**
