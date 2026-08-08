@@ -12,8 +12,8 @@ Este documento especifica os requisitos funcionais essenciais (Mínimo Viável -
 |===
 | ID | Título | Descrição | Prioridade
 
-| R001
-| Login de usuário
+| RF005
+| Envio de Atestado Médico
 | O sistema deve permitir que o usuário realize login informando Registro de Aluno(RA) e senha previamente cadastrados.
 | Alta/Essencial
 
