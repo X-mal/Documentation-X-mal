@@ -11,7 +11,7 @@
 [cols="1,4", frame=all, grid=none]
 |===
 a|
-image::fucapi_logo.png[alt="Fucapi",width=80][/.]
+image::fucapi_logo.png[/.][alt="Fucapi",width=80]
 |*CENTRO EDUCACIONAL FUCAPI* +
 Curso de Informática +
 Coordenação de curso técnico
