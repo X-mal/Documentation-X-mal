@@ -8,7 +8,7 @@ Este documento especifica os requisitos funcionais essenciais (Mínimo Viável -
 
 == 2. Requisitos Essenciais
 
-[cols="1m,2,4,1c", options="header"]
+[cols="1,2,4,1", options="header"]
 |===
 | ID | Título | Descrição | Prioridade
 
