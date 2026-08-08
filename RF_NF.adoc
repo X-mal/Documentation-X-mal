@@ -1,49 +1,36 @@
+= Especificação de Requisitos Essenciais
+:toc: left
+:toc-title: Sumário
+:icons: font
 
+== 1. Visão Geral
+Este documento especifica os requisitos funcionais essenciais (Mínimo Viável - MVP) do sistema.
 
-* **RF001 — Login de usuário**
+== 2. Requisitos Essenciais
 
-  * Aluno entra com RA e senha.
-* **RF002 — Envio de atestado**
+[cols="1m,2,4,1c", options="header"]
+|===
+| ID | Título | Descrição | Prioridade
 
-  * Aluno anexa e envia o atestado.
-* **RF003 — Envio de justificativa**
+| R001
+| Login de usuário
+| O sistema deve permitir que o usuário realize login informando Registro de Aluno(RA) e senha previamente cadastrados.
+| Alta/Essencial
 
-  * Aluno pode escrever uma justificativa relacionada à ausência.
-* **RF004 — Consulta de solicitações**
+| R002
+| Conexão com a Internet
+| O sistema deve estar conectado com a internet para seu funcionamento.
+| Alta/Essencial
 
-  * Aluno visualiza os atestados/justificativas enviados e seus respectivos status.
-* **RF005 — Análise do atestado**
+| R003
+| Anexo de arquivos
+| A área de anexo de arquivos deve estar sempre funcional.
+| Alta/Essencial
 
-  * Responsável da escola visualiza os documentos enviados.
-* **RF006 — Aprovação ou rejeição**
+| R004
+| Conexão com banco de dados
+| O sistema deve estar sempre conectado ao banco de dados para o envio dos arquivos.
+| Alta/Essencial
+|===
 
-  * Responsável informa se o atestado foi aceito ou recusado.
-* **RF007 — Resposta ao aluno**
-
-  * O sistema disponibiliza para o aluno a decisão da escola.
-* **RF008 — Histórico**
-
-  * O sistema mantém o histórico dos envios e decisões.
-
-    
-Podemos organizar como o modelo:
-
-**Usabilidade**
-
-* **NF001 — Interface amigável**
-* **NF002 — Facilidade de envio de arquivos**
-
-**Segurança**
-
-* **NF003 — Autenticação**
-* **NF004 — Proteção dos documentos**
-
-**Confiabilidade**
-
-* **NF005 — Armazenamento dos arquivos**
-* **NF006 — Disponibilidade dos dados**
-
-**Desempenho**
-
-* **NF007 — Tempo de resposta**
-* **NF008 — Upload de arquivos**
+NOTE: Todos os requisitos listados nesta seção são **essenciais** para a operação inicial da aplicação e compõem o escopo prioritário de desenvolvimento.
