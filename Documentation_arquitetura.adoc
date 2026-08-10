@@ -1,0 +1,235 @@
+= Documentação de Levantamento de Requisitos
+:author: Jorge Juscelino Bueno Filho (Mestre:Kevin da Costa Vinagre)
+:revnumber: 1.0
+:doctype: book
+:revdate: 2026-08-07
+:sectnums:
+:pdf-page-size: A4
+:imagesdir: image
+
+
+[cols="1,4", frame=all, grid=none]
+|===
+a|
+image::fucapi_logo.png[/.][alt="Fucapi",width=80]
+|*CENTRO EDUCACIONAL FUCAPI* +
+Curso de Informática +
+Coordenação de curso técnico
+|===
+
+[role = center]
+*FairTech - FairTechVote* 
+
+[role = right]
+*Documento de Arquitetura de Software* +
+Versão 1.0
+
+[role = left]
+== Introdução
+1.1 Finalidade
+
+[role = justificado]
+Este documento fornece uma visão arquitetural abrangente do sistema [nome do sistema], usando diversas visões de arquitetura para representar diferentes aspectos do sistema. O objetivo
+deste documento é capturar e comunicar as decisões arquiteturais significativas que foram tomadas
+em relação ao sistema. O documento irá adotar uma estrutura baseada na visão “4+1” de modelo de arquitetura [KRU41].
+
+[role = justificado]
+
+1.2 Escopo
+Este Documento de Arquitetura de Software se aplica ao [nome do sistema], que será
+desenvolvido pela [área / equipe]. 
+
+[role = justificado]
+1.3 Definições, Acrônimos e Abreviações
+QoS – Quality of Service, ou qualidade de serviço. Termo utilizado para descrever um conjunto de
+qualidades que descrevem as requisitos não-funcionais de um sistema, como performance, disponibilidade e escalabilidade.
+
+[role = left]
+== Convenções, termos e abreviações
+
+[cols="1,4", frame=all, grid=all]
+|===
+| *Termo e abreviação* | *Definição*
+
+| Admin
+| Perfil de usuário responsável por receber, analisar e responder aos arquivos enviados pelo Aluno.
+
+| Aluno
+| Perfil de usuário que representa o estudante; responsável por enviar arquivos (atestados/justificativas) ao sistema.
+
+| Android
+| Sistema operacional para dispositivos móveis.
+
+| Android Studio
+| Ambiente de Desenvolvimento Integrado (IDE) oficial para desenvolvimento Android.
+
+| API
+| Interface de Programação de Aplicações (Application Programming Interface).
+
+| Arial
+| Fonte tipográfica utilizada no texto do documento.
+
+| Atestado Médico / Justificativa
+| Documento anexado pelo Aluno para justificar uma ausência ou situação, enviado através do sistema.
+
+| Ator
+| Pessoa ou entidade externa que interage com o sistema (ex.: Aluno, Admin).
+
+| Background
+| Cor ou imagem de fundo de um elemento, definida em linguagens como HTML e CSS.
+
+| Backup
+| Cópia de segurança dos dados, feita para garantir sua integridade caso o original seja perdido ou corrompido.
+
+| BPMN
+| Business Process Model and Notation — notação gráfica usada para modelar processos de negócio (utilizada na Visão BPMN deste documento).
+
+| Browser
+| Também conhecido como navegador; programa que permite acessar páginas e documentos da internet.
+
+| CASSANDRADB
+| Banco de dados NoSQL orientado a colunas.
+
+| CNH
+| Carteira Nacional de Habilitação — documento oficial que atesta a aptidão de um cidadão para conduzir veículos.
+
+| Coordenação
+| Setor responsável por analisar as justificativas/atestados enviados pelo Aluno e decidir a resposta.
+
+| COUCHBASE
+| Banco de dados NoSQL orientado a documentos.
+
+| CPU bound
+| Situação em que o desempenho de um processo é limitado pela capacidade de processamento (CPU).
+
+| Criptografia
+| Conjunto de técnicas que transforma uma informação legível em outra ilegível, decifrável apenas por quem possui a chave secreta, tornando-a difícil de ser lida por alguém não autorizado.
+
+| CRUD
+| Create, Read, Update, Delete — as quatro operações básicas de manipulação de dados.
+
+| DB
+| Banco de Dados (Database).
+
+| Design
+| Processo técnico e criativo que utiliza imagens e textos para comunicar mensagens e ideias.
+
+| Desktop
+| Computador pessoal, geralmente de uso fixo.
+
+| Diagrama de Casos de Uso
+| Representação gráfica das interações entre os atores (Aluno, Admin) e as funcionalidades do sistema.
+
+| Diagrama de Classes
+| Representação da estrutura do sistema por meio de suas classes, atributos, métodos e relacionamentos.
+
+| Excel
+| Programa de planilha eletrônica produzido pela Microsoft.
+
+| GITHUB
+| Plataforma de hospedagem de código-fonte e controle de versão.
+
+| Host
+| Qualquer máquina ou computador conectado a uma rede.
+
+| Internet
+| Rede mundial de computadores.
+
+| I/O bound
+| Situação em que o desempenho de um processo é limitado pela velocidade de operações de Entrada/Saída (Input/Output).
+
+| JAVA
+| Linguagem de programação orientada a objetos.
+
+| Kernel
+| Núcleo do sistema operacional; faz a ponte entre os aplicativos e o processamento real de dados feito a nível de hardware.
+
+| Layout
+| Esboço que mostra a distribuição física, tamanhos e pesos de elementos como texto, gráficos ou figuras em um espaço.
+
+| log
+| Registro cronológico de eventos e atividades do sistema.
+
+| Login
+| Ato ou credencial de acesso usada para identificar um usuário no sistema.
+
+| Logoff
+| Encerramento de uma sessão autenticada de um usuário no sistema.
+
+| Marketing
+| Conjunto de técnicas e atividades relacionadas ao fluxo de bens e serviços do produtor ao consumidor, abrangendo estudo de mercado, promoção, publicidade, vendas e pós-venda.
+
+| Menu
+| Lista de opções disponíveis em uma aplicação.
+
+| Microsoft
+| Empresa multinacional de tecnologia dos Estados Unidos, desenvolvedora de softwares (Windows, Excel, Office) e outros produtos e serviços.
+
+| MVP
+| Minimum Viable Product (Produto Mínimo Viável) — versão inicial do sistema contendo apenas as funcionalidades essenciais.
+
+| PHP
+| Linguagem de programação de domínio específico voltada para o desenvolvimento web.
+
+| Plugin
+| Arquivo que contém linhas de código que executa uma determinada função dentro de um sistema já existente.
+
+| QoS
+| Quality of Service (Qualidade de Serviço) — conjunto de requisitos não funcionais como performance, disponibilidade e escalabilidade.
+
+| RA
+| Registro de Aluno — código de identificação do aluno, usado no login do sistema.
+
+| RF
+| Requisito Funcional — descreve uma função que o sistema deve executar.
+
+| RNF
+| Requisito Não Funcional — descreve uma característica de qualidade do sistema (performance, segurança, disponibilidade etc.), e não uma função específica.
+
+| teorema CAP
+| Consistency, Availability, Partition tolerance — afirma que um sistema distribuído consegue garantir, no máximo, duas dessas três propriedades ao mesmo tempo.
+
+| teorema PACELC
+| Extensão do teorema CAP: além de Partição (P), Disponibilidade (A) e Consistência (C), considera também a troca entre Latência (L) e Consistência (C) quando não há partição na rede (Else).
+
+| Timestamp
+| Marca de data e hora registrada automaticamente pelo sistema (ex.: data de criação de um registro).
+
+| UI
+| Interface do Usuário (User Interface).
+
+| UML
+| Unified Modeling Language — linguagem de modelagem usada para representar os diagramas do sistema (Casos de Uso, Classes etc.).
+|===
+
+[role = left]
+== Visão BPMN
+Para a intentificação de ações e iniciativas:
+
+image::Diagrama-bpmn.png[/.][alt="Fucapi",width=3000]
+
+[role = left]
+== VISÃO DE CASOS DE USO
+Esta seção lista as especificações centrais e significantes para a arquitetura do sistema. Lista de casos de uso do sistema:  Caso de Uso [001]  Caso de Uso [002]
+
+*4.1 Casos de Uso significantes para a arquitetura
+Para a identificação dos requisitos foram utilizadas suas devidas categorias, usando uma abreviação da mesma, como por 
+exemplo:
+
+image::Diagrama_de_Caso_de_Uso.png[/.][alt="Fucapi",width=3000]
+
+[role = left]
+==  VISÃO DE IMPLEMENTAÇÃO
+*5.1 Caso de Uso [001]
+*5.1.1 Diagrama de Classes
+
+image::Diagrama_de_Classe.png[/.][alt="Fucapi",width=3000]
+
+[role = left]
+== DIMENSIONAMENTO E PERFORMANCE
+
+*6.1 Volume
+Enumerar os itens relativos ao volume de acesso aos recursos da aplicação:  Número de estimado usuários: [450]  Número estimado de acessos diários: [600]  Número estimado de acessos por período: [1200]  Tempo de sessão de um usuário(mín): [020]
+
+*6.2 Performance
+Enumerar os itens referentes à resposta esperada do sistema:  Tempo máximo para a execução de determinada transação: [030]
