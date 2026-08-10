@@ -104,9 +104,11 @@ exemplo:
 image::Diagrama_de_Caso_de_Uso.png[/.][alt="Fucapi",width=3000]
 
 [role = left]
-==  VISÃO DE IMPLEMENTAÇÃO
+==  VISÃO DE Classes
 *5.1 Caso de Uso [001]
+
 *5.1.1 Diagrama de Classes
+
 
 image::Diagrama_de_Classe.png[/.][alt="Fucapi",width=3000]
 
