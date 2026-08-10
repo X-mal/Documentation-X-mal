@@ -17,17 +17,17 @@ Este documento especifica os requisitos funcionais essenciais (Mínimo Viável -
 | O sistema deve permitir que o usuário realize login informando Registro de Aluno(RA) e senha previamente cadastrados.
 | Alta/Essencial
 
-| R002
+| RF002
 | Conexão com a Internet
 | O sistema deve estar conectado com a internet para seu funcionamento.
 | Alta/Essencial
 
-| R003
+| RF003
 | Anexo de arquivos
 | A área de anexo de arquivos deve estar sempre funcional.
 | Alta/Essencial
 
-| R004
+| RF004
 | Conexão com banco de dados
 | O sistema deve estar sempre conectado ao banco de dados para o envio dos arquivos.
 | Alta/Essencial
