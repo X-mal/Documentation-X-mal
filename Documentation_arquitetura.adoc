@@ -90,7 +90,8 @@ tela.
 [role = left]
 == 2. Visão BPMN
 Para a intentificação de ações e iniciativas:
-image::Diargrama-bpmn.png[/.][alt="Fucapi",width=300]
+
+image::Diargrama-bpmn.png[/.][alt="Fucapi",width=3000]
 
 [role = left]
 == 3. VISÃO DE CASOS DE USO
@@ -99,14 +100,14 @@ Esta seção lista as especificações centrais e significantes para a arquitetu
 Para a identificação dos requisitos foram utilizadas suas devidas categorias, usando uma abreviação da mesma, como por 
 exemplo:
 
-image::Diagrama_de_Caso_de_Uso.png[/.][alt="Fucapi",width=300]
+image::Diagrama_de_Caso_de_Uso.png[/.][alt="Fucapi",width=3000]
 
 [role = left]
 == 4. VISÃO DE IMPLEMENTAÇÃO
 *4.1 Caso de Uso [001]
 *4.1.1 Diagrama de Classes
 
-image::Diagrama_de_Classe.png[/.][alt="Fucapi",width=80]
+image::Diagrama_de_Classe.png[/.][alt="Fucapi",width=3000]
 
 [role = left]
 == 5. DIMENSIONAMENTO E PERFORMANCE
