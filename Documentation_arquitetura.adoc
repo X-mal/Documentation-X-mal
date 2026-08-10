@@ -88,32 +88,33 @@ tela.
 |===
 
 [role = left]
-== 2. Visão BPMN
+== Visão BPMN
 Para a intentificação de ações e iniciativas:
 
 image::Diagrama-bpmn.png[/.][alt="Fucapi",width=3000]
 
 [role = left]
-== 3. VISÃO DE CASOS DE USO
+== VISÃO DE CASOS DE USO
 Esta seção lista as especificações centrais e significantes para a arquitetura do sistema. Lista de casos de uso do sistema:  Caso de Uso [001]  Caso de Uso [002]
-*3.1 Casos de Uso significantes para a arquitetura
+
+*4.1 Casos de Uso significantes para a arquitetura
 Para a identificação dos requisitos foram utilizadas suas devidas categorias, usando uma abreviação da mesma, como por 
 exemplo:
 
 image::Diagrama_de_Caso_de_Uso.png[/.][alt="Fucapi",width=3000]
 
 [role = left]
-== 4. VISÃO DE IMPLEMENTAÇÃO
-*4.1 Caso de Uso [001]
-*4.1.1 Diagrama de Classes
+==  VISÃO DE IMPLEMENTAÇÃO
+*5.1 Caso de Uso [001]
+*5.1.1 Diagrama de Classes
 
 image::Diagrama_de_Classe.png[/.][alt="Fucapi",width=3000]
 
 [role = left]
-== 5. DIMENSIONAMENTO E PERFORMANCE
+== DIMENSIONAMENTO E PERFORMANCE
 
-*5.1 Volume
+*6.1 Volume
 Enumerar os itens relativos ao volume de acesso aos recursos da aplicação:  Número de estimado usuários: [450]  Número estimado de acessos diários: [600]  Número estimado de acessos por período: [1200]  Tempo de sessão de um usuário(mín): [020]
 
-*5.2 Performance
+*6.2 Performance
 Enumerar os itens referentes à resposta esperada do sistema:  Tempo máximo para a execução de determinada transação: [030]
