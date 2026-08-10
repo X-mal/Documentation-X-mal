@@ -91,7 +91,7 @@ tela.
 == 2. Visão BPMN
 Para a intentificação de ações e iniciativas:
 
-image::Diargrama-bpmn.png[/.][alt="Fucapi",width=3000]
+image::Diagrama-bpmn.png[/.][alt="Fucapi",width=3000]
 
 [role = left]
 == 3. VISÃO DE CASOS DE USO
