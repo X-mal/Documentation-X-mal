@@ -1,0 +1,240 @@
+
+= Documentação de Levantamento de Requisitos
+:author: Jorge Juscelino Bueno Filho (Mestre:Kevin da Costa Vinagre)
+:revnumber: 1.0
+:doctype: book
+:revdate: 2026-08-07
+:sectnums:
+:pdf-page-size: A4
+:imagesdir: image
+
+
+[cols="1,4", frame=all, grid=none]
+|===
+a|
+image::fucapi_logo.png[/.][alt="Fucapi",width=80]
+
+
+|*CENTRO EDUCACIONAL FUCAPI* +
+Curso de Informática +
+Coordenação de curso técnico
+|===
+
+[role = center]
+*FairTech - FairTechVote* 
+
+[role = right]
+*Documento de Arquitetura de Software* +
+Versão 1.0
+
+[role = left]
+== Introdução 
+
+  *Este aplicativo tem como objetivo final, suporte para o aluno que possar efetuar ou justificar
+suas faltas por meio on-line de onde estiver o aluno a criação de uma função na qual o Aluno(a)
+poderia enviar atestados médicos enquanto ausente, ou em ocasiões.
+
+== VISÃO GERAL DO DOCUMENTO
+
+  *O que é o X-MEM?: Com o programa em mãos o aluno(a) teria como inicio seu cadastro na tela 
+de login para adentrar o APP.
+
+   *Entrada / Cadastro: O usuário acessa a plataforma, cria seu perfil e define suas preferências.
+
+  *Uso Principais Recurso(s): breve frase do core feature, seleciona o serviço desejado e confirma
+a justificativa da falta em poucos cliques.
+
+  *Resultado / Saída: O aplicativo processa a solicitação e entrega o relatório de atestados
+a confirmação da entrega em tempo real.
+
+[role = left]
+== Convenções, termos e abreviações
+
+[cols="1,4", frame=all, grid=all]
+|===
+| *Termo e abreviação* | *Definição*
+
+| Admin
+| Perfil de usuário responsável por receber, analisar e responder aos arquivos enviados pelo Aluno.
+
+| Aluno
+| Perfil de usuário que representa o estudante; responsável por enviar arquivos (atestados/justificativas) ao sistema.
+
+| Android
+| Sistema operacional para dispositivos móveis.
+
+| Android Studio
+| Ambiente de Desenvolvimento Integrado (IDE) oficial para desenvolvimento Android.
+
+| API
+| Interface de Programação de Aplicações (Application Programming Interface).
+
+| Arial
+| Fonte tipográfica utilizada no texto do documento.
+
+| Atestado Médico / Justificativa
+| Documento anexado pelo Aluno para justificar uma ausência ou situação, enviado através do sistema.
+
+| Ator
+| Pessoa ou entidade externa que interage com o sistema (ex.: Aluno, Admin).
+
+| Background
+| Cor ou imagem de fundo de um elemento, definida em linguagens como HTML e CSS.
+
+| Backup
+| Cópia de segurança dos dados, feita para garantir sua integridade caso o original seja perdido ou corrompido.
+
+| BPMN
+| Business Process Model and Notation — notação gráfica usada para modelar processos de negócio (utilizada na Visão BPMN deste documento).
+
+| Browser
+| Também conhecido como navegador; programa que permite acessar páginas e documentos da internet.
+
+| CASSANDRADB
+| Banco de dados NoSQL orientado a colunas.
+
+| CNH
+| Carteira Nacional de Habilitação — documento oficial que atesta a aptidão de um cidadão para conduzir veículos.
+
+| Coordenação
+| Setor responsável por analisar as justificativas/atestados enviados pelo Aluno e decidir a resposta.
+
+| COUCHBASE
+| Banco de dados NoSQL orientado a documentos.
+
+| CPU bound
+| Situação em que o desempenho de um processo é limitado pela capacidade de processamento (CPU).
+
+| Criptografia
+| Conjunto de técnicas que transforma uma informação legível em outra ilegível, decifrável apenas por quem possui a chave secreta, tornando-a difícil de ser lida por alguém não autorizado.
+
+| CRUD
+| Create, Read, Update, Delete — as quatro operações básicas de manipulação de dados.
+
+| DB
+| Banco de Dados (Database).
+
+| Design
+| Processo técnico e criativo que utiliza imagens e textos para comunicar mensagens e ideias.
+
+| Desktop
+| Computador pessoal, geralmente de uso fixo.
+
+| Diagrama de Casos de Uso
+| Representação gráfica das interações entre os atores (Aluno, Admin) e as funcionalidades do sistema.
+
+| Diagrama de Classes
+| Representação da estrutura do sistema por meio de suas classes, atributos, métodos e relacionamentos.
+
+| Excel
+| Programa de planilha eletrônica produzido pela Microsoft.
+
+| GITHUB
+| Plataforma de hospedagem de código-fonte e controle de versão.
+
+| Host
+| Qualquer máquina ou computador conectado a uma rede.
+
+| Internet
+| Rede mundial de computadores.
+
+| I/O bound
+| Situação em que o desempenho de um processo é limitado pela velocidade de operações de Entrada/Saída (Input/Output).
+
+| JAVA
+| Linguagem de programação orientada a objetos.
+
+| Kernel
+| Núcleo do sistema operacional; faz a ponte entre os aplicativos e o processamento real de dados feito a nível de hardware.
+
+| Layout
+| Esboço que mostra a distribuição física, tamanhos e pesos de elementos como texto, gráficos ou figuras em um espaço.
+
+| log
+| Registro cronológico de eventos e atividades do sistema.
+
+| Login
+| Ato ou credencial de acesso usada para identificar um usuário no sistema.
+
+| Logoff
+| Encerramento de uma sessão autenticada de um usuário no sistema.
+
+| Marketing
+| Conjunto de técnicas e atividades relacionadas ao fluxo de bens e serviços do produtor ao consumidor, abrangendo estudo de mercado, promoção, publicidade, vendas e pós-venda.
+
+| Menu
+| Lista de opções disponíveis em uma aplicação.
+
+| Microsoft
+| Empresa multinacional de tecnologia dos Estados Unidos, desenvolvedora de softwares (Windows, Excel, Office) e outros produtos e serviços.
+
+| MVP
+| Minimum Viable Product (Produto Mínimo Viável) — versão inicial do sistema contendo apenas as funcionalidades essenciais.
+
+| PHP
+| Linguagem de programação de domínio específico voltada para o desenvolvimento web.
+
+| Plugin
+| Arquivo que contém linhas de código que executa uma determinada função dentro de um sistema já existente.
+
+| QoS
+| Quality of Service (Qualidade de Serviço) — conjunto de requisitos não funcionais como performance, disponibilidade e escalabilidade.
+
+| RA
+| Registro de Aluno — código de identificação do aluno, usado no login do sistema.
+
+| RF
+| Requisito Funcional — descreve uma função que o sistema deve executar.
+
+| RNF
+| Requisito Não Funcional — descreve uma característica de qualidade do sistema (performance, segurança, disponibilidade etc.), e não uma função específica.
+
+| teorema CAP
+| Consistency, Availability, Partition tolerance — afirma que um sistema distribuído consegue garantir, no máximo, duas dessas três propriedades ao mesmo tempo.
+
+| teorema PACELC
+| Extensão do teorema CAP: além de Partição (P), Disponibilidade (A) e Consistência (C), considera também a troca entre Latência (L) e Consistência (C) quando não há partição na rede (Else).
+
+| Timestamp
+| Marca de data e hora registrada automaticamente pelo sistema (ex.: data de criação de um registro).
+
+| UI
+| Interface do Usuário (User Interface).
+
+| UML
+| Unified Modeling Language — linguagem de modelagem usada para representar os diagramas do sistema (Casos de Uso, Classes etc.).
+|===
+
+
+
+== Visão Geral
+Este documento especifica os requisitos funcionais essenciais (Mínimo Viável - MVP) do sistema.
+
+== Requisitos Essenciais
+
+[cols="1m,2,4,1c", options="header"]
+|===
+| ID | Título | Descrição | Prioridade
+
+| R001
+| Login de usuário
+| O sistema deve permitir que o usuário realize login informando Registro de Aluno(RA) e senha previamente cadastrados.
+| Alta/Essencial
+
+| R002
+| Conexão com a Internet
+| O sistema deve estar conectado com a internet para seu funcionamento.
+| Alta/Essencial
+
+| R003
+| Anexo de arquivos
+| A área de anexo de arquivos deve estar sempre funcional.
+| Alta/Essencial
+
+| R004
+| Conexão com banco de dados
+| O sistema deve estar sempre conectado ao banco de dados para o envio dos arquivos.
+| Alta/Essencial
+|===
+
+NOTE: Todos os requisitos listados nesta seção são **essenciais** para a operação inicial da aplicação e compõem o escopo prioritário de desenvolvimento.
