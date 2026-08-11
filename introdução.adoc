@@ -1,18 +1,20 @@
 # -Documentation-X-mal
                                 
-                                INTRODUÇÃO 1
-Este aplicativo tem como objetivo final, suporte para o aluno que possar efetuar ou justificar
+                                      INTRODUÇÃO 
+
+  .Este aplicativo tem como objetivo final, suporte para o aluno que possar efetuar ou justificar
 suas faltas por meio on-line de onde estiver o aluno a criação de uma função na qual o Aluno(a)
 poderia enviar atestados médicos enquanto ausente, ou em ocasiões.
 
                                 VISÃO GERAL DO DOCUMENTO
-O que é o X-MEM?: Com o programa em mãos o aluno(a) teria como inicio seu cadastro na tela 
+
+  .O que é o X-MEM?: Com o programa em mãos o aluno(a) teria como inicio seu cadastro na tela 
 de login para adentrar o APP.
 
- Entrada / Cadastro: O usuário acessa a plataforma, cria seu perfil e define suas preferências.
+   Entrada / Cadastro: O usuário acessa a plataforma, cria seu perfil e define suas preferências.
 
- Uso Principais Recurso(s): breve frase do core feature, seleciona o serviço desejado e confirma
+  Uso Principais Recurso(s): breve frase do core feature, seleciona o serviço desejado e confirma
 a justificativa da falta em poucos cliques.
 
- Resultado / Saída: O aplicativo processa a solicitação e entrega o relatório de atestados
+  Resultado / Saída: O aplicativo processa a solicitação e entrega o relatório de atestados
 a confirmação da entrega em tempo real.
