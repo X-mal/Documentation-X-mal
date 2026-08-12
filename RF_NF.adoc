@@ -41,22 +41,26 @@ Saídas e Pós-Condições: O sistema deverá registrar a decisão da escola e d
 
 NOTE: Todos os requisitos listados nesta seção são **essenciais** para a operação inicial da aplicação e compõem o escopo prioritário de desenvolvimento.
 
-== 3. Requisitos Não Funcionais
+| NF001
+| Segurança e Controle de Acesso
+| O sistema deverá garantir que somente usuários autenticados e autorizados tenham acesso às informações, documentos e funcionalidades disponíveis na plataforma. +
+Atores: Aluno e Responsável da Escola. +
+Entradas e Pré-Condições: O usuário deverá possuir cadastro no sistema e informar corretamente suas credenciais de acesso.
+Saídas e Pós-Condições: O sistema deverá permitir o acesso somente às funcionalidades e informações correspondentes ao tipo de usuário autenticado.
+| Essencial
 
-=== NF001 — Segurança e Controle de Acesso
+| NF002
+| Disponibilidade e Funcionamento
+| O sistema deverá permanecer disponível para permitir o envio, consulta e análise das solicitações realizadas pelos usuários, desde que exista conexão com a Internet. +
+Atores: Aluno e Responsável da Escola. +
+Entradas e Pré-Condições: O usuário deverá possuir acesso à Internet e utilizar um navegador compatível com o sistema.
+Saídas e Pós-Condições: O sistema deverá permitir que o usuário utilize suas funcionalidades normalmente enquanto o serviço estiver disponível.
+| Essencial
 
-O sistema deverá garantir que somente usuários autenticados e autorizados tenham acesso às informações e documentos disponíveis na plataforma.
-
-Prioridade: Essencial.
-
-=== NF002 — Disponibilidade e Funcionamento
-
-O sistema deverá permanecer disponível para que os alunos possam enviar atestados e justificativas e para que a escola possa consultar e responder às solicitações, desde que exista conexão com a Internet.
-
-Prioridade: Essencial.
-
-=== NF003 — Desempenho
-
-O sistema deverá apresentar as páginas, informações e respostas às ações dos usuários em tempo adequado, evitando demora excessiva durante o envio de arquivos, consulta de solicitações e análise pela escola.
-
-Prioridade: Essencial.çl
+| NF003
+| Desempenho
+| O sistema deverá apresentar as páginas, informações e respostas às ações dos usuários em tempo adequado, evitando demora excessiva durante o envio de arquivos, consulta e análise das solicitações. +
+Atores: Aluno e Responsável da Escola. +
+Entradas e Pré-Condições: O usuário deverá estar conectado à Internet e realizar uma ação disponível no sistema.
+Saídas e Pós-Condições: O sistema deverá processar a ação solicitada e apresentar o resultado ao usuário em tempo adequado.
+| Essencial
