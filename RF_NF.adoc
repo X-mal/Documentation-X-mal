@@ -14,8 +14,13 @@ Este documento especifica os requisitos funcionais essenciais (Mínimo Viável -
 
 | RF005
 | Envio de Atestado Médico
-| O sistema deve permitir que o usuário realize login informando Registro de Aluno(RA) e senha previamente cadastrados.
-| Alta/Essencial
+| O sistema deverá permitir que o aluno envie um atestado médico para análise da escola.
+| Atores: Alunos
+| Prioridade: Essencial 
+| Entradas e Pre-condições: O aluno deverá estar autenticado no sistema e selecionar um arquivo de atestado médico válido para realizar o envio.
+| Saídas e Pós-Condições: O sistema deverá registrar o atestado enviado, disponibilizá-lo para análise da escola e informar ao aluno que o envio foi realizado com sucesso. A solicitação deverá ficar com o status “Aguardando análise”.
+
+
 
 | RF002
 | Conexão com a Internet
