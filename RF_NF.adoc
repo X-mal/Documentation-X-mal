@@ -40,3 +40,23 @@ Saídas e Pós-Condições: O sistema deverá registrar a decisão da escola e d
 |===
 
 NOTE: Todos os requisitos listados nesta seção são **essenciais** para a operação inicial da aplicação e compõem o escopo prioritário de desenvolvimento.
+
+== 3. Requisitos Não Funcionais
+
+=== NF001 — Segurança e Controle de Acesso
+
+O sistema deverá garantir que somente usuários autenticados e autorizados tenham acesso às informações e documentos disponíveis na plataforma.
+
+Prioridade: Essencial.
+
+=== NF002 — Disponibilidade e Funcionamento
+
+O sistema deverá permanecer disponível para que os alunos possam enviar atestados e justificativas e para que a escola possa consultar e responder às solicitações, desde que exista conexão com a Internet.
+
+Prioridade: Essencial.
+
+=== NF003 — Desempenho
+
+O sistema deverá apresentar as páginas, informações e respostas às ações dos usuários em tempo adequado, evitando demora excessiva durante o envio de arquivos, consulta de solicitações e análise pela escola.
+
+Prioridade: Essencial.çl
