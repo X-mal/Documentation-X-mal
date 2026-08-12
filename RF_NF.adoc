@@ -1,3 +1,14 @@
+= Especificação de Requisitos Essenciais
+:toc: left
+:toc-title: Sumário
+:icons: font
+
+== 1. Visão Geral
+
+Este documento especifica os requisitos funcionais essenciais (Mínimo Viável - MVP) do sistema.
+
+== 2. Requisitos Essenciais
+
 [cols="1,2,4,1", options="header"]
 |===
 | ID | Título | Descrição | Prioridade
@@ -10,18 +21,22 @@ Entradas e Pré-Condições: O aluno deverá estar autenticado no sistema e sele
 Saídas e Pós-Condições: O sistema deverá registrar o atestado enviado, disponibilizá-lo para análise da escola e informar ao aluno que o envio foi realizado com sucesso. A solicitação deverá ficar com o status "Aguardando análise".
 | Essencial
 
-| RF002
-| Conexão com a Internet
-| O sistema deve estar conectado com a Internet para seu funcionamento.
+| RF006
+| Envio de Justificativa
+| O sistema deverá permitir que o aluno envie uma justificativa referente à sua ausência para análise da escola. +
+Atores: Aluno. +
+Entradas e Pré-Condições: O aluno deverá estar autenticado no sistema e preencher a justificativa solicitada. +
+Saídas e Pós-Condições: O sistema deverá registrar a justificativa enviada e disponibilizá-la para análise da escola.
 | Essencial
 
-| RF003
-| Anexo de arquivos
-| A área de anexo de arquivos deve estar sempre funcional.
+| RF007
+| Análise e Resposta da Escola
+| O sistema deverá permitir que a escola analise os atestados e justificativas enviados pelos alunos e informe se foram aceitos ou recusados. +
+Atores: Responsável da Escola. +
+Entradas e Pré-Condições: O responsável deverá estar autenticado no sistema e possuir acesso às solicitações enviadas pelos alunos. +
+Saídas e Pós-Condições: O sistema deverá registrar a decisão da escola e disponibilizar a resposta para consulta do aluno.
 | Essencial
 
-| RF004
-| Conexão com banco de dados
-| O sistema deve estar sempre conectado ao banco de dados para o envio dos arquivos.
-| Essencial
 |===
+
+NOTE: Todos os requisitos listados nesta seção são **essenciais** para a operação inicial da aplicação e compõem o escopo prioritário de desenvolvimento.
